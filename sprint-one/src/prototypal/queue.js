@@ -1,7 +1,7 @@
 var Queue = function() {
   // Hey! Rewrite in the new style. Your code will wind up looking very similar,
   // but try not not reference your old code in writing the new style.
-  var queueInstance = Object.create(Queue.prototype);
+  var queueInstance = Object.create(queueMethods);
   queueInstance.length = 0;
   queueInstance.front = 0;
   queueInstance.end = 0;
@@ -27,8 +27,8 @@ var queueMethods = {
   }
 };
 
-Queue.prototype.size = queueMethods.size;
-Queue.prototype.enqueue = queueMethods.enqueue;
-Queue.prototype.dequeue = queueMethods.dequeue;
+// Queue.prototype.size = queueMethods.size;
+// Queue.prototype.enqueue = queueMethods.enqueue;
+// Queue.prototype.dequeue = queueMethods.dequeue;
 
 
